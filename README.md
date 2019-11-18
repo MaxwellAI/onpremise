@@ -1,3 +1,10 @@
+# Installation instructions
+
+`./install.sh`
+`./init-letsencrypt.sh`
+
+(See https://medium.com/@pentacent/nginx-and-lets-encrypt-with-docker-in-less-than-5-minutes-b4b8a60d3a71.)
+
 # Sentry 10 On-Premise BETA [![Build Status][build-status-image]][build-status-url]
 
 Official bootstrap for running your own [Sentry](https://sentry.io/) with [Docker](https://www.docker.com/).
