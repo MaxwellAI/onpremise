@@ -55,7 +55,9 @@ system.secret-key: '!!changeme!!'
 
 filestore.backend: 'filesystem'
 filestore.options:
-  location: '/var/lib/sentry/files'
+  location: '/data/files'
+dsym.cache-path: '/data/dsym-cache'
+releasefile.cache-path: '/data/releasefile-cache'
 
 # filestore.backend: 's3'
 # filestore.options:
@@ -67,3 +69,23 @@ system.internal-url-prefix: 'http://web:9000'
 symbolicator.enabled: true
 symbolicator.options:
   url: "http://symbolicator:3021"
+
+transaction-events.force-disable-internal-project: true
+
+######################
+# GitHub Integration #
+######################
+
+# github-app.id: GITHUB_APP_ID
+# github-app.name: 'GITHUB_APP_NAME'
+# github-app.webhook-secret: 'GITHUB_WEBHOOK_SECRET' # Use only if configured in GitHub
+# github-app.client-id: 'GITHUB_CLIENT_ID'
+# github-app.client-secret: 'GITHUB_CLIENT_SECRET'
+# github-app.private-key: |
+#   -----BEGIN RSA PRIVATE KEY-----
+#   privatekeyprivatekeyprivatekeyprivatekey
+#   privatekeyprivatekeyprivatekeyprivatekey
+#   privatekeyprivatekeyprivatekeyprivatekey
+#   privatekeyprivatekeyprivatekeyprivatekey
+#   privatekeyprivatekeyprivatekeyprivatekey
+#   -----END RSA PRIVATE KEY-----
